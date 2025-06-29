@@ -1,20 +1,27 @@
-# 🚁 IITISoC-25-IVR002: Virtual Water Level Monitor for Autonomous Drone Missions
+#  IITISoC-25-IVR002: Dual Irrigation Drone
 
-## 📌 Project Overview  
-This project implements a **Virtual Water Level Monitor** integrated into an autonomous drone mission system using **ROS 2**, **PX4**, **Gazebo**, and **QGroundControl**. The drone begins its mission with a simulated water tank (10L capacity) and decreases by 0.5L at each waypoint — enabling realistic simulation of drones for use cases like agricultural spraying, firefighting, or water delivery.
+## Problem Statement  
+Design and implement a dual-drone system for autonomous
+coverage and irrigation in a simulated environment using ROS
+2 (Humble or Jazzy), PX4 Firmware, and Ground Control
+Station. The drones will collaborate to cover a defined region,
+generate geotags for areas needing irrigation, and irrigate those
+regions based on a predefined logic. The drones must monitor
+its battery levels and recharge as needed to complete the
+mission within a predefined timeframe.
 
 ---
 
-## 👥 Team Members
+##  Team Members
 
-- 🧑‍💻 [@Gopesh Srinivasan](https://github.com/Gopesh223)
-- 🧑‍💻 [@Vimal Pranav S](https://github.com/VimalPranav)
-- 🧑‍💻 [@Aadarsh](https://github.com/Aadarsh1406)
+-  [@Gopesh Srinivasan](https://github.com/Gopesh223)
+-  [@Vimal Pranav S](https://github.com/VimalPranav)
+-  [@Aadarsh](https://github.com/Aadarsh1406)
 
-## 🧑‍🏫 Mentors
+## Mentors
 
-- 👨‍🏫 [@mentor1](https://github.com/mentor1)
-- 👨‍🏫 [@mentor2](https://github.com/mentor2)
+-  [@mentor1](https://github.com/mentor1)
+-  [@mentor2](https://github.com/mentor2)
 
 ---
 
