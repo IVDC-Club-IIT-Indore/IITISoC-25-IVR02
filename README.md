@@ -75,7 +75,7 @@ The QGC UI will open.
 
 ### 4. Start the mission:
 
-Either slide the launch arrow on the interface or hold the spacebar to initiate the mission. The x500 drone will begin to navigate via the waypoints
+Either slide the launch arrow on the interface or hold the spacebar to initiate the mission. The x500 drone will begin to navigate via the waypoints.
 
 ### 5. Creating package for irrigation drone
 Create a python package using this:
@@ -84,10 +84,11 @@ ros2 pkg create --build-type ament_python dual_drone_1
 ```
 Then create a python file in the package:
 ```
-cd dual_drone_1
 touch dual_drone_1/file_name.py
 ```
 Make the file executable using:
 ```
+cd dual_drone_1
 chmod +x file_name.py
 ```
+Similar to this, create two more python files in the given package and copy the contents of single_drone.py, dual_drone_cov.py, dual_drone_irr.py in the files you've created
