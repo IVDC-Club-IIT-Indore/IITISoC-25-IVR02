@@ -57,6 +57,11 @@ Run the given command to naviagate to the starting place of the mission:
 ```
  PX4_HOME_LAT=12.9716 PX4_HOME_LON=77.5946 PX4_HOME_ALT=100 make px4_sitl gz_x500
 ```
+To spawn the second drone simultaneously in the same location:
+```
+PX4_GZ_STANDALONE=1 PX4_SYS_AUTOSTART=4001 PX4_GZ_MODEL_POSE="0,1" PX4_SIM_MODEL=gz_x500 PX4_HOME_LAT=12.9716 PX4_HOME_LON=77.5946 PX4_HOME_ALT=100 ./build/px4_sitl_default/bin/px4 -i 1
+```
+Now the drones will be spawned in gazebo and you can view it in QGC
 
 ### 3. Uploading the mission in QGC
 In another terminal, run:
