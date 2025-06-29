@@ -65,20 +65,20 @@ Now the drones will be spawned in gazebo and you can view it in QGC
 
 ### 3. Setting up mavros connection
 There should be 2 different mavros command for 2 drones:\
-for drone 1,
+For Drone 1:
 ```
 ros2 launch mavros px4.launch fcu_url:=udp://:14540@localhost:14557
 ```
-for drone 2, 
+For Drone 2: 
 ```
 ros2 launch mavros px4.launch   fcu_url:=udp://:14541@localhost:14558   fcu_protocol:=v2.1   tgt_system:=2   tgt_component:=1   namespace:=drone2
 ```
 Also, you can check the connectivity of mavros with the drone using the command:\
-for drone 1,
+For Drone 1:
 ```
 ros2 topic echo /mavros/state
 ```
-for drone 2, 
+For Drone 2: 
 ```
 ros2 topic echo /drone2/state
 ```
