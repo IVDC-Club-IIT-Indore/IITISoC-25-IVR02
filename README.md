@@ -93,6 +93,8 @@ chmod +x file_name.py
 ```
 Similar to this, create two more python files in the given package and copy the contents of single_drone.py, dual_drone_cov.py, dual_drone_irr.py in the files you've created
 
+Edit the setup.py file in the package created as in the file of same name attached
+
 ### 6. Running the nodes
 
 After launching
