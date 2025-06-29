@@ -14,3 +14,9 @@ Mentors
 _**Mentor 1**:  [@mentor1](https://github.com/mentor1)_
 
 _**Mentor 2**:  [@mentor2](https://github.com/mentor2)_
+
+Framework used
+ROS2
+Gazebo
+PX4 Firmware
+QGroundControl
