@@ -20,9 +20,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'coverage_node = dual_drone_1.coverage_node:main',
-            'irrigation_node = dual_drone_1.irrigation_node:main',
-            'irrigation = dual_drone_1.irrigation:main',
             'waypoint_water_tracker = dual_drone_1.single_drone:main',
             'geotag_publisher = dual_drone_1.dual_drone_cov:main',
             'geotag_subscriber = dual_drone_1.dual_drone_irr:main',
