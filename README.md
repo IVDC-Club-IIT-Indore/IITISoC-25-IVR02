@@ -57,13 +57,48 @@ Run the given command to naviagate to the starting place of the mission:
 ```
  PX4_HOME_LAT=12.9716 PX4_HOME_LON=77.5946 PX4_HOME_ALT=100 make px4_sitl gz_x500
 ```
-To spawn the second drone simultaneously in the same location:
+To spawn the second drone simultaneously in the same location with a namespace drone2:
 ```
 PX4_GZ_STANDALONE=1 PX4_SYS_AUTOSTART=4001 PX4_GZ_MODEL_POSE="0,1" PX4_SIM_MODEL=gz_x500 PX4_HOME_LAT=12.9716 PX4_HOME_LON=77.5946 PX4_HOME_ALT=100 ./build/px4_sitl_default/bin/px4 -i 1
 ```
 Now the drones will be spawned in gazebo and you can view it in QGC
 
-### 3. Uploading the mission in QGC
+### 3. Setting up mavros connection
+There should be 2 different mavros command for 2 drones:
+for drone 1,
+```
+ros2 launch mavros px4.launch fcu_url:=udp://:14540@localhost:14557
+```
+for drone 2, 
+```
+ros2 launch mavros px4.launch   fcu_url:=udp://:14541@localhost:14558   fcu_protocol:=v2.1   tgt_system:=2   tgt_component:=1   namespace:=drone2
+```
+Also, you can check the connectivity of mavros with the drone using the command:
+for drone 1,
+```
+ros2 topic echo /mavros/state
+```
+for drone 2, 
+```
+ros2 topic echo /drone2/state
+```
+If connected, you will get output like:
+```
+header:
+  stamp:
+    sec: 1751202847
+    nanosec: 105140285
+  frame_id: ''
+connected: true
+armed: false
+guided: true
+manual_input: false
+mode: AUTO.LOITER
+system_status: 0
+---
+```
+
+### 4. Uploading the mission in QGC
 In another terminal, run:
 ```
 ./QGroundControl
@@ -78,11 +113,11 @@ The QGC UI will open.
 
  - Click Upload Required to send the plan to the drone.
 
-### 4. Start the mission:
+### 5. Start the mission:
 
 Either slide the launch arrow on the interface or hold the spacebar to initiate the mission. The x500 drone will begin to navigate via the waypoints.
 
-### 5. Creating package for irrigation drone
+### 6. Creating package for irrigation drone
 Create a python package using this:
 ```
 ros2 pkg create --build-type ament_python dual_drone_1
@@ -107,7 +142,7 @@ i.e., inside the 'console_scripts', add:
 'geotag_subscriber = dual_drone_1.dual_drone_irr:main',
 ```
 
-### 6. Running the nodes
+### 7. Running the nodes
 
 After launching
 Open ROS2 workspace and run:
