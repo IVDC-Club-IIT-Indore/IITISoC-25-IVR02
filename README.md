@@ -47,4 +47,5 @@ Make sure you have the following installed:
 - [QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
 
 '''bash
-pip insya
+
+pip install numpy
