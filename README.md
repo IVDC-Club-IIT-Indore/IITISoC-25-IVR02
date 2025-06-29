@@ -41,8 +41,8 @@ mission within a predefined timeframe.
 
 Make sure you have the following installed:
 - Ubuntu 22.04 or Ubuntu 24.04
-- [ROS 2 Humble](https://docs.ros.org/en/humble/index.html)(For Ubuntu 22.04)
-- [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/index.html)(For Ubuntu 24.04)
+- [ROS 2 Humble](https://docs.ros.org/en/humble/index.html) (For Ubuntu 22.04)
+- [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/index.html) (For Ubuntu 24.04)
 - [Gazebo Harmonic](https://gazebosim.org/docs/harmonic)
 - [PX4 Firmware](https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html)
 - [QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
@@ -78,7 +78,11 @@ The QGC UI will open.
 Either slide the launch arrow on the interface or hold the spacebar to initiate the mission. The x500 drone will begin to navigate via the waypoints
 
 ### 5. Creating package for irrigation drone
+Create a python package using this:
 ```
 ros2 pkg create --build-type ament_python dual_drone_1
 ```
-
+Then create a python file in the package:
+```
+touch dual_drone_1/file_name.py
+```
