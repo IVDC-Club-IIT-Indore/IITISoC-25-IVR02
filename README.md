@@ -84,11 +84,11 @@ ros2 pkg create --build-type ament_python dual_drone_1
 ```
 Then create a python file in the package:
 ```
+cd dual_drone_1
 touch dual_drone_1/file_name.py
 ```
 Make the file executable using:
 ```
-cd dual_drone_1
 chmod +x file_name.py
 ```
 Similar to this, create two more python files in the given package and copy the contents of single_drone.py, dual_drone_cov.py, dual_drone_irr.py in the files you've created
