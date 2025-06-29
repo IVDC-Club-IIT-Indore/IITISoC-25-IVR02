@@ -95,6 +95,13 @@ Similar to this, create two more python files in the given package and copy the 
 
 Edit the setup.py file in the package created as in the file of same name attached
 
+i.e., inside the 'console_scripts', add:
+```
+'waypoint_water_tracker = dual_drone_1.single_drone:main',
+'geotag_publisher = dual_drone_1.dual_drone_cov:main',
+'geotag_subscriber = dual_drone_1.dual_drone_irr:main',
+```
+
 ### 6. Running the nodes
 
 After launching
