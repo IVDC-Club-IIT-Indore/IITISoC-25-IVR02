@@ -41,9 +41,10 @@ mission within a predefined timeframe.
 
 Make sure you have the following installed:
 
-- [ROS 2 Humble or Jazzy](https://docs.ros.org/en/humble/index.html)
+- [ROS 2 Humble](https://docs.ros.org/en/humble/index.html)
+- [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/index.html)
 - [Gazebo Harmonic](https://gazebosim.org/docs/harmonic)
-- [PX4 Firmware](https://github.com/PX4/PX4-Autopilot)
+- [PX4 Firmware]((https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html))
 - [QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
 
 ### 2. Spawning the drone in PX4
