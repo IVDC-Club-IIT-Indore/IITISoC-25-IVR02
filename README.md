@@ -2,11 +2,11 @@
 
 Team Members
 
-_**Team Member 1**:  [@user1](https://github.com/Gopesh223)_
+_**Team Member 1**:  [@Gopesh Srinivasan](https://github.com/Gopesh223)_
 
-_**Team Member 2**:  [@user2](https://github.com/user2)_
+_**Team Member 2**:  [@Vimal Pranav S](https://github.com/VimalPranav)_
 
-_**Team Member 3**:  [@user3](https://github.com/user3)_
+_**Team Member 3**:  [@Aadarsh](https://github.com/Aadarsh1406)_
 
 _**Team Member 4**:  [@user4](https://github.com/user4)_
 
