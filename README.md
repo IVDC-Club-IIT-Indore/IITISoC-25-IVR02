@@ -1,35 +1,46 @@
-# IITISoC-25-IVR0xx PS Title
+# 🚁 IITISoC-25-IVR002: Virtual Water Level Monitor for Autonomous Drone Missions
 
-Team Members
+## 📌 Project Overview  
+This project implements a **Virtual Water Level Monitor** integrated into an autonomous drone mission system using **ROS 2**, **PX4**, **Gazebo**, and **QGroundControl**. The drone begins its mission with a simulated water tank (10L capacity) and decreases by 0.5L at each waypoint — enabling realistic simulation of drones for use cases like agricultural spraying, firefighting, or water delivery.
 
-_**Team Member 1**:  [@Gopesh Srinivasan](https://github.com/Gopesh223)_
+---
 
-_**Team Member 2**:  [@Vimal Pranav S](https://github.com/VimalPranav)_
+## 👥 Team Members
 
-_**Team Member 3**:  [@Aadarsh](https://github.com/Aadarsh1406)_
+- 🧑‍💻 [@Gopesh Srinivasan](https://github.com/Gopesh223)
+- 🧑‍💻 [@Vimal Pranav S](https://github.com/VimalPranav)
+- 🧑‍💻 [@Aadarsh](https://github.com/Aadarsh1406)
 
+## 🧑‍🏫 Mentors
 
-Mentors
+- 👨‍🏫 [@mentor1](https://github.com/mentor1)
+- 👨‍🏫 [@mentor2](https://github.com/mentor2)
 
-_**Mentor 1**:  [@mentor1](https://github.com/mentor1)_
+---
 
-_**Mentor 2**:  [@mentor2](https://github.com/mentor2)_
+## 🛠️ Frameworks & Tools Used
 
-Framework used
-ROS2-Humble/Jazzy
-Gazebo-Harmonic
-PX4 Firmware
-QGroundControl
+- **ROS 2** – Humble / Jazzy  
+- **Gazebo** – Harmonic  
+- **PX4 Firmware**  
+- **QGroundControl**  
+- **MAVSDK-Python**
 
-Setup
-1) Make sure you have the above frameworks installed
-2) In your command prompt window, run:
-   cd PX4-Autopilot
-3) Run
-   PX4_HOME_LAT=12.9716 PX4_HOME_LON=77.5946 PX4_HOME_ALT=100 make px4_sitl gz_x500
-4) You should see a gazebo window open with your drone
-5) In another terminal, run
-   ./QGroundControl.AppImage
-6) The QGroundControl UI should appear. Under fly option on the left side, choose the option plan.
-7) Select file and upload the given file and then click on upload required to upload the plan to the drone
-8) Then slide the arrow or hold spacebar to start the mission
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Prerequisites
+
+Make sure you have the following installed:
+
+- [ROS 2 Humble or Jazzy](https://docs.ros.org/en/humble/index.html)
+- [Gazebo Harmonic](https://gazebosim.org/docs/harmonic)
+- [PX4 Firmware](https://github.com/PX4/PX4-Autopilot)
+- [QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
+- [MAVSDK-Python](https://mavsdk.mavlink.io/main/en/python/)
+
+Install MAVSDK with:
+
+```bash
+pip install mavsdk
