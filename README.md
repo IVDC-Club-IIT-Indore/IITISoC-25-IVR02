@@ -52,4 +52,22 @@ Open terminal and run:
 ```
 cd PX4-Autopilot
 ```
+Run the given command to naviagate to the starting place of the mission:
+```
+ PX4_HOME_LAT=12.9716 PX4_HOME_LON=77.5946 PX4_HOME_ALT=100 make px4_sitl gz_x500
+```
 
+### 3. Uploading the mission in QGC
+In another terminal, run:
+```
+./QGroundControl
+```
+The QGC UI will open. 
+
+Go to the Fly view on the left panel.
+
+Switch to the Plan tab.
+
+Click File → Open, select the provided .plan file.
+
+Click Upload Required to send the plan to the drone.
