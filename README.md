@@ -64,10 +64,10 @@ In another terminal, run:
 ```
 The QGC UI will open. 
 
-Go to the Fly view on the left panel.
+ - Go to the Fly view on the left panel.
 
-Switch to the Plan tab.
+ - Switch to the Plan tab.
 
-Click File → Open, select the provided .plan file.
+ - Click File → Open, select the provided .plan file.
 
-Click Upload Required to send the plan to the drone.
+ - Click Upload Required to send the plan to the drone.
