@@ -105,10 +105,10 @@ Then, run:
 ```
 source install/setup.bash
 ```
-The node names for single_drone.py, dual_drone_cov.py and dual_drone_irr.py are waypoint_water_tracker, geotag_publisher, geotag_subscriber.
+The node names for single_drone.py, dual_drone_cov.py and dual_drone_irr.py are waypoint_water_tracker, geotag_publisher, geotag_subscriber as given in the setup.py in the package.
 
-Then run the node(for single drone):
+Then run the node:
 ```
-ros2 run dual_drone_1 waypoint_water_tracker
+ros2 run dual_drone_1 <node_name>
 ```
-Node command for dual_drone_cov:
+replace the node names as mentioned above in place of <node_name> to run the respective nodes.
