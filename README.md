@@ -46,5 +46,9 @@ Make sure you have the following installed:
 - [PX4 Firmware](https://github.com/PX4/PX4-Autopilot)
 - [QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
 
+### 2. Spawning the drone in PX4
+
+Open terminal and run:
 ```bash
-pip install numpy
+cd PX4-Autopilot
+
