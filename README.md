@@ -71,3 +71,7 @@ The QGC UI will open.
  - Click File → Open, select the provided .plan file.
 
  - Click Upload Required to send the plan to the drone.
+
+### 4. Start the mission:
+
+Either slide the launch arrow on the interface or hold the spacebar to initiate the mission. The x500 drone will begin to navigate via the waypoints
