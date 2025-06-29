@@ -40,9 +40,9 @@ mission within a predefined timeframe.
 ### 1. Prerequisites
 
 Make sure you have the following installed:
-
-- [ROS 2 Humble](https://docs.ros.org/en/humble/index.html)
-- [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/index.html)
+- Ubuntu 22.04 or Ubuntu 24.04
+- [ROS 2 Humble](https://docs.ros.org/en/humble/index.html)(For Ubuntu 22.04)
+- [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/index.html)(For Ubuntu 24.04)
 - [Gazebo Harmonic](https://gazebosim.org/docs/harmonic)
 - [PX4 Firmware](https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html)
 - [QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
