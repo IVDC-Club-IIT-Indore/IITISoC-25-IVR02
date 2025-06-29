@@ -86,3 +86,8 @@ Then create a python file in the package:
 ```
 touch dual_drone_1/file_name.py
 ```
+Make the file executable using:
+```
+cd dual_drone_1
+chmod +x file_name.py
+```
