@@ -11,7 +11,7 @@ class GeotagPublisher(Node):
     def __init__(self):
         super().__init__('geotag_publisher')
 
-        self.waypoints = self.load_waypoints('/home/vimal-pranav/Downloads/mission_with_loiter_5s.plan')
+        self.waypoints = self.load_waypoints('mission_with_loiter_5s.plan')
         self.get_logger().info(f"Loaded {len(self.waypoints)} waypoints.")
 
         # Publishing geotag
