@@ -84,10 +84,10 @@ ros2 pkg create --build-type ament_python dual_drone_1
 ```
 Then create a python file in the package:
 ```
+cd dual_drone_1
 touch dual_drone_1/file_name.py
 ```
 Make the file executable using:
 ```
-cd dual_drone_1
 chmod +x file_name.py
 ```
