@@ -45,7 +45,6 @@ Make sure you have the following installed:
 - [Gazebo Harmonic](https://gazebosim.org/docs/harmonic)
 - [PX4 Firmware](https://github.com/PX4/PX4-Autopilot)
 - [QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
-- [MAVSDK-Python](https://mavsdk.mavlink.io/main/en/python/)
 
 Install MAVSDK with:
 
