@@ -14,7 +14,7 @@ class WaypointWaterTracker(Node):
         super().__init__('waypoint_water_tracker')
 
         # Parameters
-        self.plan_path = '/home/vimal-pranav/Downloads/mission_with_loiter_5s.plan'
+        self.plan_path = 'mission_with_loiter_5s.plan'
         self.initial_water = 30.0  #in litres
         self.water_decrement = 0.5  
         self.loiter_time = 5.0      
