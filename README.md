@@ -25,7 +25,7 @@ mission within a predefined timeframe.
 
 ---
 
-## 🛠️ Frameworks & Tools Used
+##  Frameworks & Tools Used
 
 - **ROS 2** – Humble / Jazzy  
 - **Gazebo** – Harmonic  
@@ -35,7 +35,7 @@ mission within a predefined timeframe.
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Prerequisites
 
@@ -160,4 +160,4 @@ Then run the node:
 ```
 ros2 run dual_drone_1 <node_name>
 ```
-replace the node names as mentioned above in place of <node_name> to run the respective nodes.
+Replace the node names as mentioned above in place of <node_name> to run the respective nodes.
