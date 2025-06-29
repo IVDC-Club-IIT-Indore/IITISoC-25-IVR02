@@ -49,6 +49,7 @@ Make sure you have the following installed:
 ### 2. Spawning the drone in PX4
 
 Open terminal and run:
-```bash
+```
 cd PX4-Autopilot
+```
 
