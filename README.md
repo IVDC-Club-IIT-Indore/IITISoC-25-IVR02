@@ -92,3 +92,20 @@ Make the file executable using:
 chmod +x file_name.py
 ```
 Similar to this, create two more python files in the given package and copy the contents of single_drone.py, dual_drone_cov.py, dual_drone_irr.py in the files you've created
+
+### 6. Running the nodes
+
+After launching
+Open ROS2 workspace and run:
+```
+colcon build --packages-select /dual_drone_1
+```
+
+Then, run:
+```
+source install/setup.bash
+```
+Then run the node(for single drone):
+```
+ros2 run /dual_drone_1 /node_name
+```
