@@ -31,7 +31,7 @@ mission within a predefined timeframe.
 - **Gazebo** – Harmonic  
 - **PX4 Firmware**  
 - **QGroundControl**  
-- **MAVSDK-Python**
+- **MAVROS**
 
 ---
 
